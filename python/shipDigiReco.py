@@ -889,7 +889,8 @@ class ShipDigiReco:
     pdg    = self.sTree.MCTrack[atrack].GetPdgCode()
     if not self.PDG.GetParticle(pdg): continue # unknown particle
     ### Experimentin with Oliver ###
-    if pdg == 13: pdg = 211 # if muon make it a pion
+    if pdg ==  211: pdg = 13 # if positive pion make K+
+    if pdg == -211: pdg = 14 # if negative pion make K-
     ################################
     meas = hitPosLists[atrack]
     nM = meas.size()
