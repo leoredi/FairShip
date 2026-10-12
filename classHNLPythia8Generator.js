@@ -2,7 +2,6 @@ var classHNLPythia8Generator =
 [
     [ "HNLPythia8Generator", "classHNLPythia8Generator.html#aaea0a3e2bf81106eaf2c2b06c45f7c7a", null ],
     [ "~HNLPythia8Generator", "classHNLPythia8Generator.html#afb006964b4a9869e13857906c0c728ef", null ],
-    [ "ClassDefOverride", "classHNLPythia8Generator.html#a5181f30c0052285fb6e4763a332e182e", null ],
     [ "getPythiaInstance", "classHNLPythia8Generator.html#ab9f77d69b880a5447d645d6b74196c3d", null ],
     [ "Init", "classHNLPythia8Generator.html#a93f9cfd20f66faece5e2a8de3c7f1842", null ],
     [ "Init", "classHNLPythia8Generator.html#af4943138b88fb29676dae5058b22863e", null ],
@@ -38,7 +37,7 @@ var classHNLPythia8Generator =
     [ "fnRetries", "classHNLPythia8Generator.html#abfd31e1ad0928087ece15693862b9a69", null ],
     [ "fPaintBeam", "classHNLPythia8Generator.html#adb1372bda90760dd76f8335650ca2a65", null ],
     [ "fPythia", "classHNLPythia8Generator.html#ae726faee25136a9c586b95d25a533400", null ],
-    [ "fRandomEngine", "classHNLPythia8Generator.html#a07f58b123dafc8cf52a27f957cddc3b8", null ],
+    [ "fRandomEngine", "classHNLPythia8Generator.html#ab520028a736f6fbdb04baaf9b2843789", null ],
     [ "fShipEventNr", "classHNLPythia8Generator.html#a6be32a40e40958ead362d03660029196", null ],
     [ "fsmearBeam", "classHNLPythia8Generator.html#ae100aa882ebf4a38c74a6e12993a87c1", null ],
     [ "fTree", "classHNLPythia8Generator.html#a571c46bff6eb108bc0118f74f8098241", null ],

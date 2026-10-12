@@ -1,5 +1,6 @@
 var shipPatRec_8py =
 [
+    [ "_prepare_output", "shipPatRec_8py.html#abad752ad62262ead20afad027ff603e5", null ],
     [ "artificial_retina_pat_rec_stereo_views", "shipPatRec_8py.html#a7bd6836b680505a30ee0d503878636cb", null ],
     [ "artificial_retina_pat_rec_y_view", "shipPatRec_8py.html#ae82fd2980482d81f8bfd7ee7af91308b", null ],
     [ "artificial_retina_pattern_recognition", "shipPatRec_8py.html#aaed2c3b80a8c779802840a527d840b5c", null ],
@@ -22,8 +23,7 @@ var shipPatRec_8py =
     [ "template_matching_pattern_recognition", "shipPatRec_8py.html#aa34e686d5bd2ebf679c50e8849436da8", null ],
     [ "tracks_combination_using_extrapolation", "shipPatRec_8py.html#ae6b2c397c5e235b05d0d91e0535e6e02", null ],
     [ "__author__", "shipPatRec_8py.html#a887d7c79ae760b2046f2430639b9310d", null ],
+    [ "logger", "shipPatRec_8py.html#a9308302671ea7bd5ccdf623c274fbdaa", null ],
     [ "max_x", "shipPatRec_8py.html#a14630232c258b560f832ed72fb3f9138", null ],
-    [ "r_scale", "shipPatRec_8py.html#aa601776ac34cd1fd3d2473441566ee86", null ],
-    [ "ReconstructibleMCTracks", "shipPatRec_8py.html#a1b2eef17cc3ac04669d2fa4c73c11257", null ],
-    [ "theTracks", "shipPatRec_8py.html#afa3471624029a285169b4908bafeaa02", null ]
+    [ "r_scale", "shipPatRec_8py.html#aa601776ac34cd1fd3d2473441566ee86", null ]
 ];

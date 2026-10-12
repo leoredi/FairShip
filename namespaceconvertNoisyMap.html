@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('namespaceconvertNoisyMap.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a811eca7da56da1ef7443688f79e16621" id="r_a811eca7da56da1ef7443688f79e16621"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceconvertNoisyMap.html#a811eca7da56da1ef7443688f79e16621">run</a> (inFileName=&quot;FieldTest.txt&quot;, rootFileName=&quot;BFieldTest.root&quot;, float|int cmScale=1.0, bool storeCoords=False)</td></tr>
-<tr class="separator:a811eca7da56da1ef7443688f79e16621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade017a6ed8959a8aba439aa4af27f4da" id="r_ade017a6ed8959a8aba439aa4af27f4da"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceconvertNoisyMap.html#ade017a6ed8959a8aba439aa4af27f4da">run</a> (inFileName=&quot;FieldTest.txt&quot;, rootFileName=&quot;BFieldTest.root&quot;, float|int cmScale=1.0, bool storeCoords=True)</td></tr>
+<tr class="separator:ade017a6ed8959a8aba439aa4af27f4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22a8d0f3700d3e69591d2a2da2ff636b" id="r_a22a8d0f3700d3e69591d2a2da2ff636b"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceconvertNoisyMap.html#a22a8d0f3700d3e69591d2a2da2ff636b">createRootMap</a> (inFileName, rootFileName, cmScale, storeCoords)</td></tr>
 <tr class="separator:a22a8d0f3700d3e69591d2a2da2ff636b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16783f254a4ad313ea8f36dfc015214f" id="r_a16783f254a4ad313ea8f36dfc015214f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceconvertNoisyMap.html#a16783f254a4ad313ea8f36dfc015214f">findRanges</a> (inFileName, cmScale)</td></tr>
@@ -331,50 +331,56 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  213</span>    xMin = 0.0</div>
 <div class="line"><span class="lineno">  214</span>    xMax = 0.0</div>
 <div class="line"><span class="lineno">  215</span>    dx = 0.0</div>
-<div class="line"><span class="lineno">  216</span> </div>
-<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">if</span> Nx &gt; 0:</div>
-<div class="line"><span class="lineno">  218</span>        xMin = xArray[0]</div>
-<div class="line"><span class="lineno">  219</span>        Nx1 = Nx - 1</div>
-<div class="line"><span class="lineno">  220</span>        xMax = xArray[Nx1]</div>
-<div class="line"><span class="lineno">  221</span>        dx = (xMax - xMin) / (Nx1 * 1.0)</div>
+<div class="line"><span class="lineno">  216</span>    yMin = 0.0</div>
+<div class="line"><span class="lineno">  217</span>    yMax = 0.0</div>
+<div class="line"><span class="lineno">  218</span>    dy = 0.0</div>
+<div class="line"><span class="lineno">  219</span>    zMin = 0.0</div>
+<div class="line"><span class="lineno">  220</span>    zMax = 0.0</div>
+<div class="line"><span class="lineno">  221</span>    dz = 0.0</div>
 <div class="line"><span class="lineno">  222</span> </div>
-<div class="line"><span class="lineno">  223</span>    <span class="keywordflow">if</span> Ny &gt; 0:</div>
-<div class="line"><span class="lineno">  224</span>        yMin = yArray[0]</div>
-<div class="line"><span class="lineno">  225</span>        Ny1 = Ny - 1</div>
-<div class="line"><span class="lineno">  226</span>        yMax = yArray[Ny1]</div>
-<div class="line"><span class="lineno">  227</span>        dy = (yMax - yMin) / (Ny1 * 1.0)</div>
+<div class="line"><span class="lineno">  223</span>    <span class="keywordflow">if</span> Nx &gt; 0:</div>
+<div class="line"><span class="lineno">  224</span>        xMin = xArray[0]</div>
+<div class="line"><span class="lineno">  225</span>        Nx1 = Nx - 1</div>
+<div class="line"><span class="lineno">  226</span>        xMax = xArray[Nx1]</div>
+<div class="line"><span class="lineno">  227</span>        dx = (xMax - xMin) / (Nx1 * 1.0)</div>
 <div class="line"><span class="lineno">  228</span> </div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> Nz &gt; 0:</div>
-<div class="line"><span class="lineno">  230</span>        zMin = zArray[0]</div>
-<div class="line"><span class="lineno">  231</span>        Nz1 = Nz - 1</div>
-<div class="line"><span class="lineno">  232</span>        zMax = zArray[Nz1]</div>
-<div class="line"><span class="lineno">  233</span>        dz = (zMax - zMin) / (Nz1 * 1.0)</div>
+<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> Ny &gt; 0:</div>
+<div class="line"><span class="lineno">  230</span>        yMin = yArray[0]</div>
+<div class="line"><span class="lineno">  231</span>        Ny1 = Ny - 1</div>
+<div class="line"><span class="lineno">  232</span>        yMax = yArray[Ny1]</div>
+<div class="line"><span class="lineno">  233</span>        dy = (yMax - yMin) / (Ny1 * 1.0)</div>
 <div class="line"><span class="lineno">  234</span> </div>
-<div class="line"><span class="lineno">  235</span>    rangeInfo = {</div>
-<div class="line"><span class="lineno">  236</span>        <span class="stringliteral">&quot;Nx&quot;</span>: Nx,</div>
-<div class="line"><span class="lineno">  237</span>        <span class="stringliteral">&quot;xMin&quot;</span>: xMin,</div>
-<div class="line"><span class="lineno">  238</span>        <span class="stringliteral">&quot;xMax&quot;</span>: xMax,</div>
-<div class="line"><span class="lineno">  239</span>        <span class="stringliteral">&quot;dx&quot;</span>: dx,</div>
-<div class="line"><span class="lineno">  240</span>        <span class="stringliteral">&quot;Ny&quot;</span>: Ny,</div>
-<div class="line"><span class="lineno">  241</span>        <span class="stringliteral">&quot;yMin&quot;</span>: yMin,</div>
-<div class="line"><span class="lineno">  242</span>        <span class="stringliteral">&quot;yMax&quot;</span>: yMax,</div>
-<div class="line"><span class="lineno">  243</span>        <span class="stringliteral">&quot;dy&quot;</span>: dy,</div>
-<div class="line"><span class="lineno">  244</span>        <span class="stringliteral">&quot;Nz&quot;</span>: Nz,</div>
-<div class="line"><span class="lineno">  245</span>        <span class="stringliteral">&quot;zMin&quot;</span>: zMin,</div>
-<div class="line"><span class="lineno">  246</span>        <span class="stringliteral">&quot;zMax&quot;</span>: zMax,</div>
-<div class="line"><span class="lineno">  247</span>        <span class="stringliteral">&quot;dz&quot;</span>: dz,</div>
-<div class="line"><span class="lineno">  248</span>    }</div>
-<div class="line"><span class="lineno">  249</span> </div>
-<div class="line"><span class="lineno">  250</span>    print(f<span class="stringliteral">&quot;rangeInfo = {rangeInfo}&quot;</span>)</div>
-<div class="line"><span class="lineno">  251</span> </div>
-<div class="line"><span class="lineno">  252</span>    <span class="keywordflow">return</span> rangeInfo</div>
-<div class="line"><span class="lineno">  253</span> </div>
-<div class="line"><span class="lineno">  254</span> </div>
+<div class="line"><span class="lineno">  235</span>    <span class="keywordflow">if</span> Nz &gt; 0:</div>
+<div class="line"><span class="lineno">  236</span>        zMin = zArray[0]</div>
+<div class="line"><span class="lineno">  237</span>        Nz1 = Nz - 1</div>
+<div class="line"><span class="lineno">  238</span>        zMax = zArray[Nz1]</div>
+<div class="line"><span class="lineno">  239</span>        dz = (zMax - zMin) / (Nz1 * 1.0)</div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>    rangeInfo = {</div>
+<div class="line"><span class="lineno">  242</span>        <span class="stringliteral">&quot;Nx&quot;</span>: Nx,</div>
+<div class="line"><span class="lineno">  243</span>        <span class="stringliteral">&quot;xMin&quot;</span>: xMin,</div>
+<div class="line"><span class="lineno">  244</span>        <span class="stringliteral">&quot;xMax&quot;</span>: xMax,</div>
+<div class="line"><span class="lineno">  245</span>        <span class="stringliteral">&quot;dx&quot;</span>: dx,</div>
+<div class="line"><span class="lineno">  246</span>        <span class="stringliteral">&quot;Ny&quot;</span>: Ny,</div>
+<div class="line"><span class="lineno">  247</span>        <span class="stringliteral">&quot;yMin&quot;</span>: yMin,</div>
+<div class="line"><span class="lineno">  248</span>        <span class="stringliteral">&quot;yMax&quot;</span>: yMax,</div>
+<div class="line"><span class="lineno">  249</span>        <span class="stringliteral">&quot;dy&quot;</span>: dy,</div>
+<div class="line"><span class="lineno">  250</span>        <span class="stringliteral">&quot;Nz&quot;</span>: Nz,</div>
+<div class="line"><span class="lineno">  251</span>        <span class="stringliteral">&quot;zMin&quot;</span>: zMin,</div>
+<div class="line"><span class="lineno">  252</span>        <span class="stringliteral">&quot;zMax&quot;</span>: zMax,</div>
+<div class="line"><span class="lineno">  253</span>        <span class="stringliteral">&quot;dz&quot;</span>: dz,</div>
+<div class="line"><span class="lineno">  254</span>    }</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>    print(f<span class="stringliteral">&quot;rangeInfo = {rangeInfo}&quot;</span>)</div>
+<div class="line"><span class="lineno">  257</span> </div>
+<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">return</span> rangeInfo</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a811eca7da56da1ef7443688f79e16621" name="a811eca7da56da1ef7443688f79e16621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a811eca7da56da1ef7443688f79e16621">&#9670;&#160;</a></span>run()</h2>
+<a id="ade017a6ed8959a8aba439aa4af27f4da" name="ade017a6ed8959a8aba439aa4af27f4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade017a6ed8959a8aba439aa4af27f4da">&#9670;&#160;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +407,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool &#160;</td>
-          <td class="paramname"><em>storeCoords</em> = <code>False</code>&#160;</td>
+          <td class="paramname"><em>storeCoords</em> = <code>True</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

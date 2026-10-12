@@ -5,7 +5,7 @@ var classstrawtubesHit =
     [ "strawtubesHit", "classstrawtubesHit.html#ab840267728ed1c2ccd78201d02740819", null ],
     [ "~strawtubesHit", "classstrawtubesHit.html#ad2eea28428aa4feb6fffec65ee710179", null ],
     [ "strawtubesHit", "classstrawtubesHit.html#a6e11d84affe82d06e2acf857f084db2d", null ],
-    [ "ClassDef", "classstrawtubesHit.html#a12390c9513913993265c768182105af5", null ],
+    [ "ClassDefOverride", "classstrawtubesHit.html#ab184802c106e19292914c4e6053cd897", null ],
     [ "GetLayerNumber", "classstrawtubesHit.html#a7fca85cb6daf4f0ce05f359707c52ad3", null ],
     [ "GetStationNumber", "classstrawtubesHit.html#a17fe7a11516d30be8c58a3180c6984b4", null ],
     [ "GetStrawNumber", "classstrawtubesHit.html#ad68404b626b1db1a4b992845f43e6272", null ],
@@ -14,7 +14,6 @@ var classstrawtubesHit =
     [ "isValid", "classstrawtubesHit.html#a70d6a5e556c214de59d5cf9fa06e3f4a", null ],
     [ "operator=", "classstrawtubesHit.html#a44fe7c47f63808dd5c5e8573e4333ee5", null ],
     [ "Print", "classstrawtubesHit.html#a54fce890c050449cbd049eb88c8f81c4", null ],
-    [ "Print", "classstrawtubesHit.html#ae558418d02986544eaaa5898d3c7c5a4", null ],
     [ "setInvalid", "classstrawtubesHit.html#ab029f6f7489aca1e7e5cd86a185fbaee", null ],
     [ "flag", "classstrawtubesHit.html#a54e0bf7ec4ad64ba3ae8c5d53781dffc", null ]
 ];

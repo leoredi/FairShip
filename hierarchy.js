@@ -16,21 +16,42 @@ var hierarchy =
     [ "experimental.analysis_toolkit.event_inspector", "classexperimental_1_1analysis__toolkit_1_1event__inspector.html", null ],
     [ "FairContFact", null, [
       [ "ShipPassiveContFact", "classShipPassiveContFact.html", null ],
-      [ "splitcalContFact", "classsplitcalContFact.html", null ],
       [ "strawtubesContFact", "classstrawtubesContFact.html", null ],
       [ "vetoContFact", "classvetoContFact.html", null ]
     ] ],
+    [ "FairDataSourceI", null, [
+      [ "VectorMCPointSource< PointType >", "classVectorMCPointSource.html", null ]
+    ] ],
     [ "FairDetector", null, [
-      [ "MTCDetector", "classMTCDetector.html", null ],
-      [ "SiliconTarget", "classSiliconTarget.html", null ],
-      [ "Target", "classTarget.html", null ],
-      [ "TargetTracker", "classTargetTracker.html", null ],
-      [ "TimeDet", "classTimeDet.html", null ],
-      [ "UpstreamTagger", "classUpstreamTagger.html", null ],
-      [ "exitHadronAbsorber", "classexitHadronAbsorber.html", null ],
-      [ "splitcal", "classsplitcal.html", null ],
-      [ "strawtubes", "classstrawtubes.html", null ],
-      [ "veto", "classveto.html", null ]
+      [ "SHiP::Detector< CaloScoringPlanePoint >", "classSHiP_1_1Detector.html", [
+        [ "CaloScoringPlane", "classCaloScoringPlane.html", null ]
+      ] ],
+      [ "SHiP::Detector< MTCDetPoint >", "classSHiP_1_1Detector.html", [
+        [ "MTCDetector", "classMTCDetector.html", null ]
+      ] ],
+      [ "SHiP::Detector< SiliconTargetPoint >", "classSHiP_1_1Detector.html", [
+        [ "SiliconTarget", "classSiliconTarget.html", null ]
+      ] ],
+      [ "SHiP::Detector< TargetPoint >", "classSHiP_1_1Detector.html", [
+        [ "Target", "classTarget.html", null ]
+      ] ],
+      [ "SHiP::Detector< TTPoint >", "classSHiP_1_1Detector.html", [
+        [ "TargetTracker", "classTargetTracker.html", null ]
+      ] ],
+      [ "SHiP::Detector< TimeDetPoint >", "classSHiP_1_1Detector.html", [
+        [ "TimeDet", "classTimeDet.html", null ]
+      ] ],
+      [ "SHiP::Detector< UpstreamTaggerPoint >", "classSHiP_1_1Detector.html", [
+        [ "UpstreamTagger", "classUpstreamTagger.html", null ]
+      ] ],
+      [ "SHiP::Detector< vetoPoint >", "classSHiP_1_1Detector.html", [
+        [ "exitHadronAbsorber", "classexitHadronAbsorber.html", null ],
+        [ "veto", "classveto.html", null ]
+      ] ],
+      [ "SHiP::Detector< strawtubesPoint >", "classSHiP_1_1Detector.html", [
+        [ "strawtubes", "classstrawtubes.html", null ]
+      ] ],
+      [ "SHiP::Detector< PointType >", "classSHiP_1_1Detector.html", null ]
     ] ],
     [ "FairField", null, [
       [ "ShipBellField", "classShipBellField.html", null ],
@@ -50,8 +71,9 @@ var hierarchy =
         [ "MuDISGenerator", "classMuDISGenerator.html", null ],
         [ "MuonBackGenerator", "classMuonBackGenerator.html", null ],
         [ "NtupleGenerator", "classNtupleGenerator.html", null ],
-        [ "Pythia6Generator", "classPythia6Generator.html", null ],
+        [ "ParticleGunGenerator", "classParticleGunGenerator.html", null ],
         [ "Pythia8Generator", "classPythia8Generator.html", null ],
+        [ "SHiP::TTreeGenerator", "classSHiP_1_1TTreeGenerator.html", null ],
         [ "tPythia6Generator", "classtPythia6Generator.html", null ]
       ] ]
     ] ],
@@ -62,17 +84,17 @@ var hierarchy =
       [ "ShipGeoCave", "classShipGeoCave.html", null ]
     ] ],
     [ "FairMCPoint", null, [
-      [ "MTCDetPoint", "classMTCDetPoint.html", null ],
       [ "SHiP::DetectorPoint", "classSHiP_1_1DetectorPoint.html", [
+        [ "CaloScoringPlanePoint", "classCaloScoringPlanePoint.html", null ],
+        [ "MTCDetPoint", "classMTCDetPoint.html", null ],
+        [ "SiliconTargetPoint", "classSiliconTargetPoint.html", null ],
+        [ "TTPoint", "classTTPoint.html", null ],
+        [ "TargetPoint", "classTargetPoint.html", null ],
         [ "TimeDetPoint", "classTimeDetPoint.html", null ],
         [ "UpstreamTaggerPoint", "classUpstreamTaggerPoint.html", null ],
-        [ "splitcalPoint", "classsplitcalPoint.html", null ],
         [ "strawtubesPoint", "classstrawtubesPoint.html", null ],
         [ "vetoPoint", "classvetoPoint.html", null ]
-      ] ],
-      [ "SiliconTargetPoint", "classSiliconTargetPoint.html", null ],
-      [ "TTPoint", "classTTPoint.html", null ],
-      [ "TargetPoint", "classTargetPoint.html", null ]
+      ] ]
     ] ],
     [ "FairModule", null, [
       [ "ShipCave", "classShipCave.html", null ],
@@ -92,29 +114,34 @@ var hierarchy =
       [ "eventDisplay.Rulers", "classeventDisplay_1_1Rulers.html", null ]
     ] ],
     [ "ShipFieldMaker::fieldInfo", "structShipFieldMaker_1_1fieldInfo.html", null ],
+    [ "ParticleGunGenerator::HistoEntry", "structParticleGunGenerator_1_1HistoEntry.html", null ],
     [ "hnl.HNLbranchings", "classhnl_1_1HNLbranchings.html", [
       [ "hnl.HNL", "classhnl_1_1HNL.html", null ]
     ] ],
+    [ "makeCascadePythia8.InclusiveSignalEvents", "classmakeCascadePythia8_1_1InclusiveSignalEvents.html", null ],
     [ "eventDisplay.IO", "classeventDisplay_1_1IO.html", null ],
     [ "ISTLPointContainer", "classISTLPointContainer.html", [
-      [ "MTCDetector", "classMTCDetector.html", null ],
-      [ "SiliconTarget", "classSiliconTarget.html", null ],
-      [ "Target", "classTarget.html", null ],
-      [ "TargetTracker", "classTargetTracker.html", null ],
-      [ "TimeDet", "classTimeDet.html", null ],
-      [ "UpstreamTagger", "classUpstreamTagger.html", null ],
-      [ "exitHadronAbsorber", "classexitHadronAbsorber.html", null ],
-      [ "splitcal", "classsplitcal.html", null ],
-      [ "strawtubes", "classstrawtubes.html", null ],
-      [ "veto", "classveto.html", null ]
+      [ "SHiP::Detector< CaloScoringPlanePoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< MTCDetPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< SiliconTargetPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< TargetPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< TTPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< TimeDetPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< UpstreamTaggerPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< vetoPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< strawtubesPoint >", "classSHiP_1_1Detector.html", null ],
+      [ "SHiP::Detector< PointType >", "classSHiP_1_1Detector.html", null ]
     ] ],
+    [ "fieldMapTools.MapRange", "classfieldMapTools_1_1MapRange.html", null ],
     [ "method_logger.MethodLogger", "classmethod__logger_1_1MethodLogger.html", null ],
+    [ "ModelSpec", "structModelSpec.html", null ],
+    [ "ParticleGunParticle", "structParticleGunParticle.html", null ],
     [ "ROOT.pyFairModule", null, [
       [ "study_GammaConv.Block", "classstudy__GammaConv_1_1Block.html", null ],
       [ "study_muMSC.Block", "classstudy__muMSC_1_1Block.html", null ],
       [ "study_thinTarget.Block", "classstudy__thinTarget_1_1Block.html", null ]
     ] ],
-    [ "regression", "structregression.html", null ],
+    [ "makeCascadePythia8.PythiaFactory", "classmakeCascadePythia8_1_1PythiaFactory.html", null ],
     [ "Pythia8::RndmEngine", null, [
       [ "PyTr1Rng", "classPyTr1Rng.html", null ],
       [ "PyTr3Rng", "classPyTr3Rng.html", null ]
@@ -125,18 +152,18 @@ var hierarchy =
     [ "SciFiMapping.SciFiMapping", "classSciFiMapping_1_1SciFiMapping.html", null ],
     [ "experimental.analysis_toolkit.selection_check", "classexperimental_1_1analysis__toolkit_1_1selection__check.html", null ],
     [ "shipDigiReco.ShipDigiReco", "classshipDigiReco_1_1ShipDigiReco.html", null ],
+    [ "makeCascadePythia8.SignalEvents", "classmakeCascadePythia8_1_1SignalEvents.html", null ],
     [ "shipVertex.Task", "classshipVertex_1_1Task.html", null ],
     [ "shipVeto.Task", "classshipVeto_1_1Task.html", null ],
     [ "TG4VUserPostDetConstruction", null, [
       [ "ShipFieldMaker", "classShipFieldMaker.html", null ]
     ] ],
     [ "TObject", null, [
-      [ "ShipHit", "classShipHit.html", [
+      [ "SHiP::DetectorHit", "classSHiP_1_1DetectorHit.html", [
         [ "MTCDetHit", "classMTCDetHit.html", null ],
         [ "SiliconTargetHit", "classSiliconTargetHit.html", null ],
         [ "TimeDetHit", "classTimeDetHit.html", null ],
         [ "UpstreamTaggerHit", "classUpstreamTaggerHit.html", null ],
-        [ "splitcalHit", "classsplitcalHit.html", null ],
         [ "strawtubesHit", "classstrawtubesHit.html", null ],
         [ "vetoHit", "classvetoHit.html", null ]
       ] ],
@@ -144,9 +171,10 @@ var hierarchy =
       [ "ShipParticle", "classShipParticle.html", null ],
       [ "TrackInfo", "classTrackInfo.html", null ],
       [ "Tracklet", "classTracklet.html", null ],
-      [ "splitcalCluster", "classsplitcalCluster.html", null ],
       [ "vetoHitOnTrack", "classvetoHitOnTrack.html", null ]
     ] ],
+    [ "TrackBuffer", "structTrackBuffer.html", null ],
+    [ "tracking_benchmark.TrackingBenchmark", "classtracking__benchmark_1_1TrackingBenchmark.html", null ],
     [ "ShipFieldMaker::transformInfo", "structShipFieldMaker_1_1transformInfo.html", null ],
     [ "TVirtualMagField", null, [
       [ "ShipBFieldMap", "classShipBFieldMap.html", null ],
@@ -160,10 +188,15 @@ var hierarchy =
       [ "BaseDetector.BaseDetector", "classBaseDetector_1_1BaseDetector.html", [
         [ "MTCDetector.MTCDetector", "classMTCDetector_1_1MTCDetector.html", null ],
         [ "SBTDetector.SBTDetector", "classSBTDetector_1_1SBTDetector.html", null ],
+        [ "SiliconTargetDetector.SiliconTargetDetector", "classSiliconTargetDetector_1_1SiliconTargetDetector.html", null ],
         [ "UpstreamTaggerDetector.UpstreamTaggerDetector", "classUpstreamTaggerDetector_1_1UpstreamTaggerDetector.html", null ],
-        [ "splitcalDetector.splitcalDetector", "classsplitcalDetector_1_1splitcalDetector.html", null ],
         [ "strawtubesDetector.strawtubesDetector", "classstrawtubesDetector_1_1strawtubesDetector.html", null ],
         [ "timeDetector.timeDetector", "classtimeDetector_1_1timeDetector.html", null ]
       ] ]
+    ] ],
+    [ "NamedTuple", null, [
+      [ "makeCascadePythia8.SignalConfig", "classmakeCascadePythia8_1_1SignalConfig.html", null ],
+      [ "study_GammaConv.Setup", "classstudy__GammaConv_1_1Setup.html", null ],
+      [ "study_muMSC.Setup", "classstudy__muMSC_1_1Setup.html", null ]
     ] ]
 ];
